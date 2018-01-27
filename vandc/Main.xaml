@@ -1,0 +1,155 @@
+﻿<Window x:Class="RagaliaHotelMS.vandc.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Booking="clr-namespace:RagaliaHotelMS.vandc.templates.booking"
+        xmlns:Service="clr-namespace:RagaliaHotelMS.vandc.templates.services"
+        Title="Main" Height="550" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="792">
+            <MenuItem Name="File" Width="46" Height="32" Header="File">
+                <MenuItem Name="Save" Header="Save" Height="32" Margin="0,0,10,0" ></MenuItem>
+                <MenuItem Name="Exit" Header="Exit" Height="32" Margin="0,0,10,0" Click="ExitToWindows" />
+            </MenuItem>
+            <MenuItem Name="Booking" Width="59" Height="32" Header="Booking">
+                <MenuItem Name="CheckIn" Header="Check in" Height="32" Margin="0,0,10,0" Click="BookingCheckIn_Click" />
+                <MenuItem Name="CheckOut" Header="Check out" Height="32" Margin="0,0,10,0" Click="BookingCheckOut_Click" />
+                <MenuItem Name="SearchEntry" Header="Search entry" Height="32" Margin="0,0,10,0" >
+                    <MenuItem Name="GetAll" Header="All entries" Height="32" Margin="0,0,10,0" />
+                    <MenuItem Name="GetByName" Header="by name" Height="32" Margin="0,0,10,0" />
+                    <MenuItem Name="GetByCNIC" Header="by C.N.I.C" Height="32" Margin="0,0,10,0" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Name="Services" Width="46" Height="32" Header="Services">
+                <MenuItem Name="FoodService" Header="Food service" Height="32" Margin="0,0,10,0" >
+                    <MenuItem Name="AddFoodOrder" Header="Add order" Height="32" Margin="0,0,10,0" />
+                    <MenuItem Name="CancelFoodOrder" Header="Remove food order" Height="32" Margin="0,0,10,0" />
+                    <MenuItem Name="UpdateFoodOrder" Header="Update food order" Height="32" Margin="0,0,10,0" />
+                    <MenuItem Name="SearchFoodOrder" Header="Search food order" Height="32" Margin="0,0,10,0" >
+                        <MenuItem Name="SearchFoodByOrderName" Header="by name" Height="32" Margin="0,0,10,0" />
+                        <MenuItem Name="SearchFoodByVisitorName" Header="by visitor name" Height="32" Margin="0,0,10,0" />
+                        <MenuItem Name="SearchFoodByVisitorCNIC" Header="by visitor C.N.I.C" Height="32" Margin="0,0,10,0" />
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TabControl Name="tabDynamic" ItemsSource="{Binding}" Margin="0,117,0,0">
+            <TabControl.Resources>
+                <DataTemplate x:Key="TabHeader" DataType="TabItem">
+                    <DockPanel>
+                        <Button Name="btnDelete" DockPanel.Dock="Right" Margin="5,0,0,0" Padding="0" Click="btnDelete_Click" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type TabItem}}, Path=Name}">
+                            <Image Source="/RagaliaHotelMS;component/resources/image/DELETE.PNG" Height="11" Width="11"></Image>
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type TabItem}}, Path=Header}" />
+                    </DockPanel>
+                </DataTemplate>
+                <DataTemplate x:Key="TabBookingCheckIn" DataType="DockPanel">
+                    <Booking:CheckIn />
+                </DataTemplate>
+                <DataTemplate x:Key="TabBookingCheckOut" DataType="DockPanel">
+                    <Booking:CheckOut />
+                </DataTemplate>
+                <DataTemplate x:Key="TabServiceFood" DataType="DockPanel">
+                    <Service:FoodServices />
+                </DataTemplate>
+                <Style TargetType="TextBox">
+                    <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                    <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+                    <Setter Property="AcceptsReturn" Value="True"></Setter>
+                    <Setter Property="TextWrapping" Value="WrapWithOverflow"></Setter>
+                    <Setter Property="MaxLines" Value="5000"></Setter>
+                    <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"></Setter>
+                    <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"></Setter>
+                </Style>
+            </TabControl.Resources>
+
+        </TabControl>
+        <Menu HorizontalAlignment="Left" Height="85" Margin="0,32,0,0" VerticalAlignment="Top" Width="792">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Height="40" Width="45" >
+                    <Image Source="/RagaliaHotelMS;component/resources/image/SAVE.PNG" Width="42"/>
+                    
+                </Button>
+                <Label Grid.Row="1" Content="Save" />
+            </Grid>
+            <Rectangle HorizontalAlignment="Stretch" Fill="Black" Height="70" Margin="0,6,0,0" RenderTransformOrigin="0.5,0.5" Width="2" >
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Height="40" Width="45" Click="BookingCheckIn_Click" >
+                    <Image Source="/RagaliaHotelMS;component/resources/image/ENTER.PNG" Width="42"/>
+                </Button>
+                <Label Grid.Row="1" Content="Check in" />
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Height="40" Width="45"  Click="BookingCheckOut_Click">
+                    <Image Source="/RagaliaHotelMS;component/resources/image/EXIT.PNG" Width="42"/>
+                </Button>
+                <Label Grid.Row="1" Content="Check out" />
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Height="40" Width="50" >
+                    <Image Source="/RagaliaHotelMS;component/resources/image/SEARCH.PNG" Width="42"/>
+                </Button>
+                <Label Grid.Row="1" Content="Search booking" />
+            </Grid>
+            <Rectangle HorizontalAlignment="Stretch" Fill="Black" Height="70" Margin="0,6,0,0" RenderTransformOrigin="0.5,0.5" Width="2" >
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Height="40" Width="50" >
+                    <Image Source="/RagaliaHotelMS;component/resources/image/FOOD.PNG" Width="42"/>
+                </Button>
+                <Label Grid.Row="1" Content="Food Services" />
+            </Grid>
+        </Menu>
+
+    </Grid>
+</Window>

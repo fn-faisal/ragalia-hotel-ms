@@ -1,0 +1,40 @@
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\bin\Debug\RagaliaHotelMS.exe.config
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\bin\Debug\RagaliaHotelMS.exe
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\bin\Debug\RagaliaHotelMS.pdb
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.csprojResolveAssemblyReference.cache
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\MainWindow.baml
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Auth.baml
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\MainWindow.g.cs
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Auth.g.cs
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\App.g.cs
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS_MarkupCompile.cache
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.g.resources
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.Properties.Resources.resources
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.csproj.GenerateResource.Cache
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.exe
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.pdb
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Main.baml
+E:\Uni\Dotnet\Programs\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Main.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\bin\Debug\RagaliaHotelMS.exe.config
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.exe
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.pdb
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\bin\Debug\RagaliaHotelMS.exe
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\bin\Debug\RagaliaHotelMS.pdb
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.csprojResolveAssemblyReference.cache
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Auth.baml
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Main.baml
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Auth.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\Main.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\App.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS_MarkupCompile.cache
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.g.resources
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.Properties.Resources.resources
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS.csproj.GenerateResource.Cache
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\templates\booking\CheckIn.baml
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\templates\booking\CheckOut.baml
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\templates\services\FoodServices.baml
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\templates\booking\CheckIn.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\templates\booking\CheckOut.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\vandc\templates\services\FoodServices.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Workspace\Visual Studio\RagaliaHotelMS\RagaliaHotelMS\obj\Debug\RagaliaHotelMS_MarkupCompile.lref
